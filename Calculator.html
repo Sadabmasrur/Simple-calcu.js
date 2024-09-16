@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+
+    <h2>Sum of two Numbers</h2>
+    <p id="var"></p>
+    <p id="var2"></p>
+    <p id="sub"></p>
+    <p id="mult"></p>
+    <p id="div"></p>
+
+    <script>
+      document.getElementById("myH").innerHTML = "Simple Calculator Operations";
+
+      document.getElementById("myP").innerHTML =
+        "Performing basic arithmetic operations using JavaScript.";
+
+      //This is a comment
+
+      var a, b, sum, sub, mult, div;
+      a = 515;
+      b = 15;
+
+      sum = a + b;
+      sub = a - b;
+      mult = a * b;
+      div = a / b;
+
+      document.getElementById("var").innerHTML =
+        "Sum of " + a + "+" + b + "=" + sum;
+      document.getElementById(
+        "var2"
+      ).innerHTML = `Sum of ${a} + ${b} = ${sum} `;
+      document.getElementById("sub").innerHTML = `Sub of ${a} - ${b} = ${sub} `;
+      document.getElementById(
+        "mult"
+      ).innerHTML = `Mult of ${a} x ${b} = ${mult} `;
+      document.getElementById("div").innerHTML = `Div of ${a} ÷ ${b} = ${div} `;
+    </script>
+  </body>
+</html>
